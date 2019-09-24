@@ -1,0 +1,77 @@
+package javaapplication3;
+
+import java.util.Scanner;
+
+
+public class JavaApplication3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner leer = new Scanner(System.in);
+        int n=0,f =1;
+        int t1 =0;
+        int t2,fibo=0;
+        int g = 1;
+        int p = 2;
+        int d = 2;
+        int primo = 0;
+        
+        System.out.println("ingrese el numero");
+        n=leer.nextInt();
+     for (int i= 1 ; i<=n ;i++){
+         t2=f;
+         f=t1+f;
+         t1=t2;
+         
+         //if(i==n){
+             
+         
+        // System.out.println(t1);
+         fibo=t1;
+         
+         //}
+         
+     
+     }
+     
+   
+  
+     /////primo
+     while ( g <= n) {
+   if (p % d == 0) {
+      if (p == d) {
+        
+        
+         g++;
+      }
+      d = 2;
+      p++;
+       
+   }
+   else
+      d++;
+   
+    if (g==n){
+      
+      primo=p;
+       
+   }
+}
+        
+        
+        int total = primo+t1;
+        System.out.println("suma : " + total);
+       
+        
+            for(int x=0; x<=total; x++){
+            System.out.print("*");
+}
+    }
+    
+    
+
+   
+}
